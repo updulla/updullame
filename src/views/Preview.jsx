@@ -1,11 +1,32 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
+const previewDemo = [
+  {
+    img: "dark",
+    title: "Dark Demo (Professional Portfolio)",
+    routerPath: "/home-dark",
+    delayAnimation: "50",
+  },
+  {
+    img: "light",
+    title: "Light Demo (Classic Portfolio)",
+    routerPath: "/home-light",
+    delayAnimation: "",
+  },
+];
 
 const Preview = () => {
   return (
     <div>
+      <section className="banner text-center">
+        <div className="content">
+          <h1>Tunis</h1>
+          <h2>Personal Portfolio React Template</h2>
+        </div>
+      </section>
+      {/* End .banner */}
+
       <section className="demo dark">
         <div className="container">
           <div className="row">
